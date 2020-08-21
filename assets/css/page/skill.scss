@@ -1,0 +1,403 @@
+ @import '../base/font';
+ @import '../base/color';
+
+ section.skill{
+ 	width: 100%;
+	padding-left: 20rem;
+	margin: 20rem 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	p.title-skill{
+		margin-top: 7rem;
+		font-family: $cardo;
+		font-size: 5rem;
+		color: $font-dark;
+		text-transform: uppercase;
+		line-height: 6rem;
+		&::after{
+			content: "";
+			display: block;
+			width: 100%;
+			height: 0.3rem;
+			background-color: $dark-color;
+		}
+	}
+	p.desc-skill{
+		font-family: $cardo;
+		font-size: 2.3rem;
+		color: $font-dark;
+		line-height: 5rem;
+	}
+ 	.container{
+ 			display: flex;
+			align-items: center;
+			justify-content: left;
+			flex-direction: row;
+			margin: 5rem 0 20rem 0;
+ 		.left-content{
+			width: 50%;
+			span{
+				font-family: $cardo;
+				font-size: 20rem;
+				color: transparent;
+				font-weight: 800;
+				line-height: 21rem;
+				-webkit-text-stroke: 3px $font-dark;
+				&:hover{
+					color: $font-dark;
+					transition: 0.2s;
+				}
+			}
+ 		}
+ 		.right-content{
+			width: 40%;
+			.desc-first{
+				font-family: $cardo;
+				font-size: 2rem;
+				line-height: 3rem;
+				color: $font-dark;
+			}
+			.desc-second{
+				font-family: $cardo;
+				font-size: 2rem;
+				line-height: 4rem;
+				color: $font-dark;
+				margin-top: 2rem;
+			}
+ 		}
+ 	}
+ 	.container-second{
+ 		margin-top: 5rem;
+ 		width: 100%;
+ 		display: flex;
+ 		justify-content: space-around;
+ 		align-items: center;
+ 		flex-direction: row;
+ 		.left-content{
+ 			.skill-developer{
+ 				width: fit-content;
+ 				height: fit-content;
+				background-color: $dark-color;
+				.title{
+					background-color: $light-color;
+					font-family: $merriweather;
+					font-weight: 800;
+					font-size: 6rem;
+					color: $font-dark;
+					&:hover{
+						color: $font-light;
+						background-color: $dark-color;
+							transition: 0.03s;
+
+					}
+				}
+				.desc{
+					margin-top: 2rem;
+					.title-desc{
+						background-color: $dark-color;
+						font-family: $merriweather;
+						font-weight: 600;
+						font-size: 2.4rem;
+						color: $font-light;
+						line-height: 5rem;
+						&:hover{
+							color: $font-dark;
+							background-color: $light-color;
+							transition: 0.03s;
+
+						}
+					}
+					.desc-desc{
+						padding-left: 5rem;
+						background-color: $dark-color;
+						font-family: $merriweather;
+						font-weight: 200;
+						font-size: 1.7rem;
+						color: $font-light;
+						padding-top: 0.9rem;
+						&:hover{
+							color: $font-dark;
+							background-color: $light-color;
+							transition: 0.03s;
+
+						}
+					}
+					.desc-desc-desc{
+						padding-top: 0.9rem;
+						padding-left: 8rem;
+						background-color: $dark-color;
+						font-family: $merriweather;
+						font-weight: 200;
+						font-size: 1.7rem;
+						color: $font-light;
+						&:hover{
+							color: $font-dark;
+							background-color: $light-color;
+							transition: 0.03s;
+
+						}
+					}
+				}
+ 			}
+ 		}
+ 		.right-content{
+			.skill-technician{
+ 				width: fit-content;
+ 				height: fit-content;
+				background-color: $dark-color;
+				.title{
+					background-color: $light-color;
+					font-family: $merriweather;
+					font-weight: 800;
+					font-size: 6rem;
+					color: $font-dark;
+					&:hover{
+						color: $font-light;
+						background-color: $dark-color;
+							transition: 0.03s;
+
+					}
+				}
+				.desc{
+					margin-top: 2rem;
+					.title-desc{
+						background-color: $dark-color;
+						font-family: $merriweather;
+						font-weight: 600;
+						font-size: 2.4rem;
+						color: $font-light;
+						line-height: 5rem;
+						&:hover{
+							color: $font-dark;
+							background-color: $light-color;
+							transition: 0.03s;
+
+						}
+					}
+					.desc-desc{
+						padding-left: 5rem;
+						background-color: $dark-color;
+						font-family: $merriweather;
+						font-weight: 200;
+						font-size: 1.7rem;
+						color: $font-light;
+						padding-top: 0.9rem;
+						&:hover{
+							color: $font-dark;
+							background-color: $light-color;
+							transition: 0.03s;
+
+						}
+					}
+					.desc-desc-desc{
+						padding-top: 0.9rem;
+						padding-left: 8rem;
+						background-color: $dark-color;
+						font-family: $merriweather;
+						font-weight: 200;
+						font-size: 1.7rem;
+						color: $font-light;
+						&:hover{
+							color: $font-dark;
+							background-color: $light-color;
+							transition: 0.03s;
+						}
+					}
+				}
+			}
+ 		}
+ 	}
+ }
+
+ @media only screen and (max-width: 1040px) {
+  section.skill{
+ 	.container{
+ 		.left-content{
+			width: 50%;
+			span{
+				font-size: 17rem;
+			}
+ 		}
+ 		.right-content{
+			width: 50%;
+			.desc-first{
+				font-size: 1.7rem;
+				color: $font-dark;
+			}
+			.desc-second{
+				font-size: 1.7rem;
+				margin-top: 3rem;
+			}
+ 		}
+ 	}
+ 	.container-second{
+ 		margin-top: 5rem;
+ 		width: 100%;
+ 		display: flex;
+ 		justify-content: center;
+ 		align-items: center;
+ 		flex-direction: column;
+ 		.left-content{
+ 			.skill-developer{
+				.title{
+					font-weight: 800;
+					font-size: 4rem;
+					color: $font-dark;
+				}
+				.desc{
+					margin-top: 2rem;
+					.title-desc{
+						font-weight: 600;
+						font-size: 2rem;
+						color: $font-light;
+						line-height: 5rem;
+					}
+					.desc-desc{
+						font-size: 1.7rem;
+					}
+					.desc-desc-desc{
+						font-size: 1.7rem;
+					}
+				}
+ 			}
+ 		}
+ 		.right-content{
+ 			margin-top: 3rem;
+			.skill-technician{
+				.title{
+					font-size: 4rem;
+				}
+				.desc{
+					margin-top: 2rem;
+					.title-desc{
+						font-size: 2rem;
+						color: $font-light;
+						line-height: 5rem;
+					}
+					.desc-desc{
+						padding-left: 5rem;
+						background-color: $dark-color;
+						font-family: $merriweather;
+						font-weight: 200;
+						font-size: 1.7rem;
+						color: $font-light;
+						padding-top: 0.9rem;
+					}
+					.desc-desc-desc{
+						padding-top: 0.9rem;
+						padding-left: 8rem;
+						background-color: $dark-color;
+						font-family: $merriweather;
+						font-weight: 200;
+						font-size: 1.7rem;
+						color: $font-light;
+					}
+				}
+			}
+ 		}
+ 	}
+ }
+ }
+
+ @media only screen and (max-width: 768px) { 
+  section.skill{
+  	padding-left: 15rem;
+ 	.container{
+ 		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+ 		.left-content{
+			width: 100%;
+			flex-direction: column;
+			span{
+				font-size: 17rem;
+			}
+ 		}
+ 		.right-content{
+			width: 100%;
+			.desc-first{
+				font-size: 1.7rem;
+				color: $font-dark;
+			}
+			.desc-second{
+				font-size: 1.7rem;
+				margin-top: 3rem;
+			}
+ 		}
+ 	}
+ 	.container-second{
+ 		margin-top: 5rem;
+ 		width: 100%;
+ 		display: flex;
+ 		justify-content: center;
+ 		align-items: center;
+ 		flex-direction: column;
+ 		.left-content{
+ 			.skill-developer{
+				.title{
+					font-weight: 800;
+					font-size: 4rem;
+					color: $font-dark;
+				}
+				.desc{
+					margin-top: 2rem;
+					.title-desc{
+						font-weight: 600;
+						font-size: 2rem;
+						color: $font-light;
+						line-height: 5rem;
+					}
+					.desc-desc{
+						font-size: 1.7rem;
+					}
+					.desc-desc-desc{
+						font-size: 1.7rem;
+					}
+				}
+ 			}
+ 		}
+ 		.right-content{
+ 			margin-top: 3rem;
+			.skill-technician{
+				.title{
+					font-size: 4rem;
+				}
+				.desc{
+					margin-top: 2rem;
+					.title-desc{
+						font-size: 2rem;
+						color: $font-light;
+						line-height: 5rem;
+					}
+					.desc-desc{
+						padding-left: 5rem;
+						background-color: $dark-color;
+						font-family: $merriweather;
+						font-weight: 200;
+						font-size: 1.7rem;
+						color: $font-light;
+						padding-top: 0.9rem;
+					}
+					.desc-desc-desc{
+						padding-top: 0.9rem;
+						padding-left: 8rem;
+						background-color: $dark-color;
+						font-family: $merriweather;
+						font-weight: 200;
+						font-size: 1.7rem;
+						color: $font-light;
+					}
+				}
+			}
+ 		}
+ 	}
+ }
+ }
+
+@media only screen and (max-width: 552px) { 
+  section.skill{
+  	padding-left: 1rem;
+ 	}
+}

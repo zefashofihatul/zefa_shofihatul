@@ -1,0 +1,132 @@
+@use './page/home';
+@use './page/about';
+@use './page/skill';
+@use './page/project';
+@use './page/contact';
+
+@import './base/font';
+@import './base/color';
+
+
+// Global Declaration
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: $light-color;
+
+}
+
+html {
+	font-size: 62.5% ;
+	font-family: $merriweather;
+  scroll-behavior: smooth;
+}
+
+nav{
+	height: 100vh;
+	width: 5rem;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-color: transparent;
+	.container{
+		height: 100%;
+		padding: 4rem 8rem 8rem 8rem ;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		background-color: transparent;
+
+		p {
+			font-family: $poppins;
+			font-size: 3rem;
+			letter-spacing: -5%;
+			font-weight: 400;
+			color: $font-dark;
+
+		}
+		.nav-open {
+			display: flex;
+			flex-direction: row;
+			transform: rotate(90deg);
+			margin-bottom: 10rem;
+			.hamburger{
+				display: none;
+			}
+			span{
+				margin-right: 6rem;
+				cursor: pointer;
+				p{
+					font-family: $poppins;
+					font-size: 1.8rem;
+					letter-spacing: 0%;
+					font-weight: 400;
+					color: $font-dark;
+				}
+			}
+		}
+	}
+}
+
+
+
+@media only screen and (max-width: 552px) {
+	nav{
+	height: fit-content;
+	width: 100%;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	background-color: transparent;
+	.container{
+		width: 100%;
+		padding: 1rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background-color: transparent;
+		p {
+			font-family: $poppins;
+			font-size: 3rem;
+			letter-spacing: -5%;
+			font-weight: 400;
+			color: $font-dark;
+
+		}
+		.nav-open {
+			display: flex;
+			flex-direction: row;
+			transform: rotate(0deg);
+			margin-bottom: 2rem;
+			.hamburger{
+				display: block;
+				width: 3rem;
+				height: 3rem;
+				font-size: 3rem;
+				font-weight: bold;
+				a {text-decoration: none;}
+			}
+			.link-page{
+				margin-right: 10rem;
+				display: none;
+				cursor: pointer;
+				p{
+					font-family: $poppins;
+					font-size: 1.8rem;
+					letter-spacing: 0%;
+					font-weight: 400;
+					color: $font-dark;
+				}
+			}
+		}
+	}
+}
+
+}

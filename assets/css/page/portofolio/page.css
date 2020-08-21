@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #ECDAC0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Merriweather", serif;
+  scroll-behavior: smooth;
+}
+
+section.title {
+  height: 100vh;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+}
+section.title .container {
+  width: 40%;
+}
+section.title .container .title-content p {
+  font-family: "Crimson Text", serif;
+  font-size: 250px;
+  line-height: 230px;
+  color: #402E2E;
+}
+section.title .container .desc-content {
+  margin-top: 2rem;
+}
+section.title .container .desc-content p {
+  font-family: "Cardo", serif;
+  font-size: 25px;
+  line-height: 35px;
+  color: #402E2E;
+}
+
+section.case-study .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.case-study .container .image-main {
+  width: 90%;
+}
+section.case-study .container .description {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+section.case-study .container .description .left {
+  padding: 2rem 0rem 2rem 10rem;
+  width: 50%;
+}
+section.case-study .container .description .left .title-sub {
+  font-family: "Cardo", serif;
+  font-size: 4rem;
+  color: #402E2E;
+  font-weight: 600;
+}
+section.case-study .container .description .left .desc-01 .heading, section.case-study .container .description .left .desc-02 .heading, section.case-study .container .description .left .desc-03 .heading {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  height: 9rem;
+  width: 30rem;
+  background-color: #1E1C1C;
+  padding: 0 2rem;
+}
+section.case-study .container .description .left .desc-01 .heading p {
+  background-color: #1E1C1C;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #C3C2C2;
+}
+section.case-study .container .description .left .desc-01 .heading-desc {
+  font-family: "Cardo", serif;
+  font-size: 25px;
+  color: #402E2E;
+}
+section.case-study .container .description .left .desc-02 .heading p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #C3C2C2;
+  background-color: #1E1C1C;
+}
+section.case-study .container .description .left .desc-02 .heading-desc {
+  font-family: "Cardo", serif;
+  font-size: 25px;
+  color: #402E2E;
+}
+section.case-study .container .description .left .desc-03 .heading p {
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  color: #C3C2C2;
+  background-color: #1E1C1C;
+}
+section.case-study .container .description .left .desc-03 .heading-desc {
+  font-family: "Cardo", serif;
+  font-size: 25px;
+  color: #402E2E;
+}
+section.case-study .container .description .right {
+  width: 50%;
+  padding: 2rem 0rem 2rem 5rem;
+}
+section.case-study .container .description .right .title-sub {
+  font-family: "Cardo", serif;
+  font-size: 4rem;
+  color: #402E2E;
+  font-weight: 600;
+}
+section.case-study .container .description .right .color {
+  width: 35rem;
+  height: 7rem;
+  margin: 5rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+section.case-study .container .description .right .color .color1 {
+  width: 25%;
+  height: 100%;
+  background-color: #6E8B6E;
+  z-index: 1;
+}
+section.case-study .container .description .right .color .color2 {
+  width: 25%;
+  height: 100%;
+  background-color: #1E1C1C;
+  z-index: 1;
+}
+section.case-study .container .description .right .color .color3 {
+  width: 25%;
+  height: 100%;
+  background-color: #4E4A4A;
+  z-index: 1;
+}
+section.case-study .container .description .right .color span {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: -30%;
+  left: -6%;
+  width: 39rem;
+  height: 7rem;
+  background-color: #C8B59A;
+}
+section.case-study .container .description .right .color-desc .color-text {
+  font-family: "Cardo", serif;
+  font-size: 2.5rem;
+  color: #402E2E;
+}
+section.case-study .container .problem, section.case-study .container .fix {
+  width: 50%;
+  text-align: center;
+  margin: 5rem;
+}
+section.case-study .container .problem .title-problem, section.case-study .container .fix .title-problem {
+  font-family: "Cardo", serif;
+  font-size: 5rem;
+  line-height: 7rem;
+  color: #402E2E;
+}
+section.case-study .container .problem .desc-problem, section.case-study .container .fix .desc-problem {
+  margin-top: 2rem;
+  font-family: "Crimson Text", serif;
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 5rem;
+  color: #402E2E;
+}
+section.case-study .container .fix {
+  margin: 5rem;
+}
+section.case-study .container .different {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section.case-study .container .different .title-different {
+  font-family: "Crimson Text", serif;
+  font-size: 5rem;
+  font-weight: 200;
+  line-height: 7rem;
+  color: #402E2E;
+}
+section.case-study .container .different .before {
+  width: 80%;
+  margin: 10rem auto;
+}
+section.case-study .container .different .before img {
+  width: 100%;
+}
+section.case-study .container .technology {
+  width: 80%;
+  text-align: left;
+  margin: 5rem;
+  display: flex;
+  align-self: left;
+  flex-direction: column;
+}
+section.case-study .container .technology .title-problem {
+  width: 60%;
+  font-family: "Cardo", serif;
+  font-size: 5rem;
+  line-height: 7rem;
+  color: #402E2E;
+}
+section.case-study .container .technology .desc-problem {
+  width: 60%;
+  margin-top: 2rem;
+  font-family: "Crimson Text", serif;
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 5rem;
+  color: #402E2E;
+}
+section.case-study .container .design, section.case-study .container .design-panel, section.case-study .container .design-construction {
+  margin: 5rem;
+  width: 80%;
+  text-align: left;
+}
+section.case-study .container .design .title-problem, section.case-study .container .design-panel .title-problem, section.case-study .container .design-construction .title-problem {
+  width: 80%;
+  font-family: "Cardo", serif;
+  font-size: 5rem;
+  line-height: 7rem;
+  color: #402E2E;
+}
+section.case-study .container .design .desc-problem, section.case-study .container .design-panel .desc-problem, section.case-study .container .design-construction .desc-problem {
+  width: 80%;
+  margin-top: 2rem;
+  font-family: "Crimson Text", serif;
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 5rem;
+  color: #402E2E;
+}
+section.case-study .container .design img, section.case-study .container .design-panel img, section.case-study .container .design-construction img {
+  margin: 5rem 0;
+  width: 100%;
+}
+section.case-study .container .design img.rotate, section.case-study .container .design-panel img.rotate, section.case-study .container .design-construction img.rotate {
+  margin: 5rem 0;
+  width: 60%;
+  transform: rotate(-90deg);
+}
+section.case-study .container .design img.portait, section.case-study .container .design-panel img.portait, section.case-study .container .design-construction img.portait {
+  width: 60%;
+}
+
+/*# sourceMappingURL=page.css.map */

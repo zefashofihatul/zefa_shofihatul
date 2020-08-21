@@ -1,0 +1,225 @@
+ @use 'makna';
+ @import '../../base/font';
+ @import '../../base/color';
+
+
+ * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #ECDAC0;
+}
+
+html {
+	font-size: 62.5% ;
+	font-family: $merriweather;
+	scroll-behavior: smooth;
+}
+
+section.title{
+	height: 100vh;
+	padding: 5rem;
+	display: flex;
+	align-items: center;
+	.container{
+		width: 40%;
+		.title-content{
+			p{
+				font-family: $crimson;
+				font-size: 250px;
+				line-height: 230px;
+				color: $portofolio-color;
+			}
+		}
+		.desc-content{
+			margin-top: 2rem;
+			p{
+				font-family: $cardo;
+				font-size: 25px;
+				line-height: 35px;
+				color: $portofolio-color;
+			}
+		}
+	}
+}
+
+section.case-study{
+	.container{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		.image-main{
+			width: 90%;
+		}
+		.description{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			.left{
+				padding: 2rem 0rem 2rem 10rem;
+				width: 50%;
+				.title-sub{
+					font-family: $cardo;
+					font-size: 4rem;
+					color: $portofolio-color;
+					font-weight: 600;
+				}
+				.desc-01, .desc-02, .desc-03{
+					.heading{
+						margin-top: 2rem;
+						display: flex;
+						align-items: center;
+						height: 9rem;
+						width: 30rem;
+						background-color: #C8B59A;
+						padding: 0 2rem;
+					}
+				}
+				.desc-01{
+					.heading{
+						p{
+							background-color: #C8B59A;
+							font-family: 'Viga', sans-serif;
+							font-size: 50px;
+							color: #fff;
+						}
+					}
+					.heading-desc{
+						font-family: $cardo;
+						font-size: 25px;
+						color: $portofolio-color;
+					}
+				}
+				.desc-02{
+					.heading{
+						p{
+							font-family: 'Viga', sans-serif;
+							font-size: 30px;
+							color: #fff;
+							background-color: #C8B59A;
+						}
+					}
+					.heading-desc{
+						font-family: $cardo;
+						font-size: 25px;
+						color: $portofolio-color;
+					}
+				}
+				.desc-03{
+					.heading{
+						p{
+							font-family: 'Permanent Marker', cursive;
+							font-size: 30px;
+							color: #fff;
+							background-color: #C8B59A;
+						}
+					}
+					.heading-desc{
+						font-family: $cardo;
+						font-size: 25px;
+						color: $portofolio-color;
+					}
+				}
+			}
+			.right{
+				width: 50%;
+				padding: 2rem 0rem 2rem 5rem;
+				.title-sub{
+					font-family: $cardo;
+					font-size: 4rem;
+					color: $portofolio-color;
+					font-weight: 600;
+				}
+				.color{
+					width: 35rem;
+					height: 7rem;
+					margin: 5rem;
+					display: flex;
+					flex-direction: row;
+					position: relative;
+					.color1{
+						width: 25%;
+						height: 100%;
+						background-color: #3C153D;
+						z-index: 1;
+
+					}
+					.color2{
+						width: 25%;
+						height: 100%;
+						background-color: #0A4610;
+						z-index: 1;
+
+					}
+					.color3{
+						width: 25%;
+						height: 100%;
+						background-color: #0E261B;
+						z-index: 1;
+					}
+					.color4{
+						width: 25%;
+						height: 100%;
+						background-color: #F0DEDE;
+						z-index: 1;
+					}
+					span{
+						display: block;
+						position: absolute;
+						z-index: 0;
+						top: -30%;
+						left: -6%;
+						width: 39rem;
+						height: 7rem;
+						background-color: #C8B59A;
+					}
+				}
+				.color-desc{
+					.color-text{
+						font-family: $cardo;
+						font-size: 2.5rem;
+						color: $portofolio-color;
+					}
+				}
+			}
+		}
+		.problem, .fix{
+			width: 50%;
+			text-align: center;
+			margin: 20rem;
+			.title-problem{
+				font-family: $cardo;
+				font-size: 9rem;
+				line-height: 10rem;
+				color: $portofolio-color;
+			}
+			.desc-problem{
+				margin-top: 2rem;
+				font-family: $crimson;
+				font-size: 3rem;
+				font-weight: 200;
+				line-height: 5rem;
+				color: $portofolio-color;
+			}
+		}
+		.fix{
+			margin: 5rem;
+		}
+		.different{
+			.title-different{
+				font-family: $crimson;
+				font-size: 7rem;
+				font-weight: 200;
+				line-height: 5rem;
+				color: $portofolio-color;
+			}
+			.before{
+				margin: 10rem 0;
+				img{
+				}
+			}
+		}
+	}
+}
