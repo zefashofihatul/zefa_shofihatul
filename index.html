@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 	<title>Portofolio</title>
 </head>
-<body>
+<body  id="page-home">
 	<nav>
 		<div class="container">
 			<p class="logo_brand">Zefa</p>
@@ -18,10 +18,10 @@
 				<div class="hamburger">
 					<a href="">&#9776;</a>
 				</div>
-				<span class="link-page"><p>Home</p></span>
-				<span class="link-page"><p>About</p></span>
-				<span class="link-page"><p>Skills</p></span>
-				<span class="link-page"><p>Project</p></span>
+				<span id="home" class="link-page"><p>Home</p></span>
+				<span id="about" class="link-page"><p>About</p></span>
+				<span id="skill" class="link-page"><p>Skills</p></span>
+				<span id="project" class="link-page"><p>Project</p></span>
 			</div>
 		</div>
 	</nav>
@@ -41,7 +41,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="about-page">
+	<section id="about-page" class="about-page">
 		<div class="container-first">
 			<div class="left-content">
 				<p class="title">What am I doing right now?</p>
@@ -71,7 +71,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="skill">
+	<section id="skill-page" class="skill">
 		<div class="container">
 			<div class="left-content">
 				<span>2018</span>
@@ -188,7 +188,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="project-list">
+	<section id="project-page" class="project-list">
 		<p class="title-main">PROJECT</p>
 		<p class="desc-project">This my project</p>
 
@@ -235,6 +235,7 @@
 	</section>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js" integrity="sha512-YkmzZl/xoJ+yOJ5YaZ8kBmyQB0jpLQDQpErTSgDsdipDcE1al6Z8TZseXLJLf3it/kRrFRJEpGC2C/jBbIF+Ng==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js" integrity="sha512-pCPP9sfLW9T7EZiw725jUl+ux032sjGhFE+ZAx00C1iO55ZmZJWpfNGbDf2ZF5b0UqxRqSW548PbZEWmH+S7pA==" crossorigin="anonymous"></script>
-<script src="./assets/js/index.js"></script>
+	<script src="./assets/js/jumpActivate.js" type="module"></script>
+	<script src="./assets/js/index.js"></script>
 </body>
 </html>
